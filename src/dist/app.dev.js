@@ -23,20 +23,20 @@ app.use(express["static"](publicDirectoryPath));
 app.get('', function (req, res) {
   res.render('index', {
     title: 'Weather',
-    name: 'Andrew Mead'
+    name: 'Dragos Padurariu'
   });
 });
 app.get('/about', function (req, res) {
   res.render('about', {
     title: 'About Me',
-    name: 'Andrew Mead'
+    name: 'Dragos Padurariu'
   });
 });
 app.get('/help', function (req, res) {
   res.render('help', {
     helpText: 'This is some helpful text.',
     title: 'Help',
-    name: 'Andrew Mead'
+    name: 'Dragos Padurariu'
   });
 });
 app.get('/weather', function (req, res) {
