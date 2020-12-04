@@ -3,7 +3,7 @@
 console.log('Client side javascript file is loaded!');
 
 var fetchWeather = function fetchWeather(address) {
-  fetch("http://localhost:3000/weather?address=".concat(address)).then(function (response) {
+  fetch("/weather?address=".concat(address)).then(function (response) {
     return response.json();
   }).then(function (data) {
     var error = data.error,
